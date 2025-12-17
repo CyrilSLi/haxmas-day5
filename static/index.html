@@ -97,7 +97,7 @@
 <body>
     <div id="content">
         <h1 id="title">Bus Photos</h1>
-        <img id="heading" src="WT_295.jpg">
+        <img id="heading" src="/static/WT_295.jpg">
         <p>Tracking bus photos since 2025</p>
         <div id="form-container">
             <form id="gift-form">
@@ -132,7 +132,7 @@
         giftsContainer.innerHTML = '';
         gifts.forEach(gift => {
             const item = document.createElement("p");
-            item.textContent = `Gift for ${gift.name}: ${gift.gift}`;
+            item.textContent = `Photo by ${gift.name}: ${gift.gift}`;
             giftsContainer.appendChild(item);
         });
     }
